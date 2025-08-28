@@ -18,7 +18,6 @@ function Hero() {
 
   return (
     <section className="relative w-full min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-6 md:px-16 text-[#f5f5f5]">
-      {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         autoPlay

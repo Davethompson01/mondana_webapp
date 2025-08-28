@@ -40,8 +40,7 @@ function BaddiePreview() {
   const row2 = useMemo(() => shuffleArray(images), [images]);
 
   return (
-    <div className="w-full overflow-hidden bg-black py-8 space-y-6">
-      {/* Row 1 */}
+    <div id="collection" className="w-full overflow-hidden bg-black py-8 space-y-6">
       <div className="flex animate-slide">
         {[...row1, ...row1].map((img, i) => (
           <img
@@ -53,7 +52,6 @@ function BaddiePreview() {
         ))}
       </div>
 
-      {/* Row 2 */}
       <div className="flex animate-slide-reverse">
         {[...row2, ...row2].map((img, i) => (
           <img
